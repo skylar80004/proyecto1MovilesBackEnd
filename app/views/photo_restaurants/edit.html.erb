@@ -1,0 +1,9 @@
+<% if signed_in? %>
+<h1>Editing Photo Restaurant</h1>
+
+<%= render 'form', photo_restaurant: @photo_restaurant %>
+
+<%= link_to 'Show', @photo_restaurant %> |
+<%= link_to 'Back', photo_restaurants_path %>
+
+<% end %>

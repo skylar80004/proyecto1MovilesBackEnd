@@ -1,0 +1,2 @@
+module PhotoRestaurantsHelper
+end

@@ -1,0 +1,22 @@
+<% if signed_in? %>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Value:</strong>
+  <%= @star.value %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @star.user %>
+</p>
+
+<p>
+  <strong>Restaurant:</strong>
+  <%= @star.restaurant %>
+</p>
+
+<%= link_to 'Edit', edit_star_path(@star) %> |
+<%= link_to 'Back', stars_path %>
+
+<% end %>

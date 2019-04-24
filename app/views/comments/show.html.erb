@@ -1,0 +1,22 @@
+<% if signed_in? %> 
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @comment.body %>
+</p>
+
+<p>
+  <strong>Restaurant:</strong>
+  <%= @comment.restaurant.name %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @comment.user.email %>
+</p>
+
+<%= link_to 'Edit', edit_comment_path(@comment) %> |
+<%= link_to 'Back', comments_path %>
+
+<% end %>

@@ -1,0 +1,17 @@
+<% if signed_in? %>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Image url:</strong>
+  <%= @photo_restaurant.image_url %>
+</p>
+
+<p>
+  <strong>Restaurant:</strong>
+  <%= @photo_restaurant.restaurant.name %>
+</p>
+
+<%= link_to 'Edit', edit_photo_restaurant_path(@photo_restaurant) %> |
+<%= link_to 'Back', photo_restaurants_path %>
+
+<% end %>

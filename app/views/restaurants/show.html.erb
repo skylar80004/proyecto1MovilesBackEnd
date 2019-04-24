@@ -1,0 +1,43 @@
+<% if signed_in? %>
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @restaurant.name %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @restaurant.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @restaurant.longitude %>
+</p>
+
+<p>
+  <strong>Kind food:</strong>
+  <%= @restaurant.kind_food %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @restaurant.phone %>
+</p>
+
+<p>
+  <strong>Website:</strong>
+  <%= @restaurant.website %>
+</p>
+
+<p>
+  <strong>Price type:</strong>
+  <%= @restaurant.price_type %>
+</p>
+
+<%= link_to 'Edit', edit_restaurant_path(@restaurant) %> |
+<%= link_to 'Back', restaurants_path %>
+
+<% end %>

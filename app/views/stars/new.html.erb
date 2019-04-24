@@ -1,0 +1,7 @@
+<% if signed_in? %>
+<h1>New Star</h1>
+
+<%= render 'form', star: @star %>
+
+<%= link_to 'Back', stars_path %>
+<% end %>

@@ -1,0 +1,7 @@
+<% if signed_in? %>
+<h1>New Schedule</h1>
+
+<%= render 'form', schedule: @schedule %>
+
+<%= link_to 'Back', schedules_path %>
+<% end %>
